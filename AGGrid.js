@@ -73,6 +73,8 @@ export const AGGrid = ({ ...props }) => {
         defaultColDef={defaultColDef}
         animateRows={true}
         sortingOrder={sortingOrder}
+        pagination={true}
+        paginationPageSize={20}
       ></AgGridReact>
     </div>
   );
