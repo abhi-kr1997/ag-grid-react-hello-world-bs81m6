@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
-import 'ag-grid/src/styles/ag-theme-material';
+// import 'ag-grid/src/styles/ag-theme-material';
 
 export const AGGrid = ({ ...props }) => {
   const [columnDefs, setColumnDefs] = useState([
@@ -67,7 +67,11 @@ export const AGGrid = ({ ...props }) => {
   };
 
   return (
-    <div className="ag-theme-alpine" style={{ height: 400, width: 600 }}>
+    <div
+      ag-grid="gridOptions"
+      className="ag-theme-alpine"
+      style={{ height: 400, width: 600 }}
+    >
       <AgGridReact
         rowData={props.data}
         columnDefs={columnDefs}
