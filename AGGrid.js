@@ -67,7 +67,7 @@ export const AGGrid = ({ ...props }) => {
   };
 
   return (
-    <div className="ag-theme-material" style={{ height: 400, width: 600 }}>
+    <div className="ag-theme-alpine" style={{ height: 400, width: 600 }}>
       <AgGridReact
         rowData={props.data}
         columnDefs={columnDefs}
